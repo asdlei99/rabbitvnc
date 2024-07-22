@@ -26,7 +26,7 @@
 
 using namespace rdr;
 
-#ifndef WIN32
+#ifndef _MSC_VER
 static inline size_t min(size_t a, size_t b) {return a<b ? a : b;}
 #endif
 

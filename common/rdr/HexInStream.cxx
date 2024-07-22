@@ -23,9 +23,9 @@
 
 using namespace rdr;
 
-#undef min
-
+#if !defined(_MSC_VER)
 static inline int min(int a, int b) {return a<b ? a : b;}
+#endif
 
 HexInStream::HexInStream(InStream& is)
 : in_stream(is)
